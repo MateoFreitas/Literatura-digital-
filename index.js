@@ -2,7 +2,7 @@ let mic;
 let showText = true;
 
 function setup() {
-  let cnv = createCanvas(100, 100);
+  let cnv = createCanvas(0,0 );
   cnv.mousePressed(userStartAudio);
   userStartAudio()
   textAlign(CENTER);
