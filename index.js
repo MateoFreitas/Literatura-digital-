@@ -18,8 +18,8 @@ function draw() {
   let tamanioTexto = map(gritoNivel, 0, 1, 1, 10); // Tamaño se ajusta de 1 a 0
   document.getElementById("grita").style.fontSize = tamanioTexto + "em";
 
-  // Ajusta la visibilidad de la frase 
-  document.getElementById("los jubilados no tengan hambre").style.visibility = mostrarTexto 
+  // Ajusta la visibilidad del texto "Grita"
+  document.getElementById("frase").style.visibility = mostrarTexto 
     ? "hidden"
     : "visible";
 }
