@@ -1,7 +1,7 @@
 let microfono;
 let mostrarTexto = true;
 let tamanioTexto = 0
-const tamaniomaximo = 20
+const tamaniomaximo = 72
 
 function setup() {
   let canvas = createCanvas(400, 400, WEBGL);
