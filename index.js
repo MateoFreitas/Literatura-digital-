@@ -10,6 +10,7 @@ function setup() {
   userStartAudio();
   microfono = new p5.AudioIn();
   microfono.start();
+  frameRate (60)
 }
 
 function draw() {
@@ -33,6 +34,8 @@ function draw() {
   }
   else {
     tamanioTexto = tamanioTexto - 1
+    document.getElementById("grita").style.fontSize = tamanioTexto + "em";
+
   }
 
 
