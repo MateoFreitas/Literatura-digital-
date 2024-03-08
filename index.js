@@ -1,4 +1,4 @@
-const tamanioMaximo = 32;
+const tamanioMaximo = 4;
 let microfono;
 let mostrarTexto = true;
 let tamanioGrita = tamanioMaximo;
@@ -17,7 +17,7 @@ function setup() {
 function draw() {
   let gritoNivel = microfono.getLevel();
   // Ajusta la visibilidad de "Grita" en función del nivel de audio
-  mostrarTexto = gritoNivel <= 0.1;
+  mostrarTexto = gritoNivel > 0.1;
   text("activar", width / 2, 20);
 
   if ((tamanioFrase < tamanioMaximo) & mostrarTexto) {
