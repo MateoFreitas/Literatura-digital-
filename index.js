@@ -11,15 +11,15 @@ function setup() {
 function draw() {
   let gritoNivel = microfono.getLevel();
   // Ajusta la visibilidad de "Grita" en función del nivel de audio
-  mostrarTexto = gritoNivel<=0.01
+  mostrarTexto = gritoNivel<=0.1
  
 
   // Ajusta el tamaño de "Grita" en función del nivel de audio
-  let tamanioTexto = map(gritoNivel, 0, 1, 1, 0); // Tamaño se ajusta de 1 a 0
+  let tamanioTexto = map(gritoNivel, 0, 1, 1, 10); // Tamaño se ajusta de 1 a 0
   document.getElementById("grita").style.fontSize = tamanioTexto + "em";
 
   // Ajusta la visibilidad del texto "Grita"
-  document.getElementById("grita").style.visibility = mostrarTexto
-    ? "visible"
-    : "hidden";
+  document.getElementById("frase").style.visibility = mostrarTexto 
+    ? "hidden"
+    : "visible";
 }
