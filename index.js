@@ -4,6 +4,7 @@ let mostrarTexto = true;
 function setup() {
   let canvas = createCanvas(200, 200);
   canvas.mousePressed(userStartAudio);
+  userStartAudio();
   microfono = new p5.AudioIn();
   microfono.start();
 }
